@@ -1,0 +1,15 @@
+{
+   "name": "@chat-message/tailwind-config",
+   "version": "1.0.0",
+   "description": "Shared Tailwind config for Chat Message",
+   "main": "index.js",
+   "types": "src/index.ts",
+   "type": "module",
+   "exports": "./src/index.ts",
+   "files": [
+      "src"
+   ],
+   "keywords": [],
+   "author": "",
+   "license": "ISC"
+}

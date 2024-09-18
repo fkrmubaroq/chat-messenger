@@ -1,0 +1,25 @@
+{
+   "name": "chat-messenger",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "workspaces": [
+      "apps/*"
+   ],
+   "scripts": {
+      "prepare": "husky",
+      "format:all": "pnpm exec prettier --write . --ignore-path .prettierignore "
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "eslint-config-prettier": "^9.1.0",
+      "husky": "^9.1.6",
+      "lint-staged": "^15.2.10",
+      "prettier": "3.3.3"
+   },
+   "lint-staged": {
+      "**/*": "prettier --write --ignore-unknown"
+   }
+}
