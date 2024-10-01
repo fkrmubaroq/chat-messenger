@@ -1,0 +1,20 @@
+export default {
+   colors: {
+      "slate-150": "#e9eef5",
+      primary: "#4f46e5",
+      "primary-focus": "#4338ca",
+      secondary: "#f000b9",
+      "secondary-focus": "#bd0090",
+      info: "#0ea5e9",
+      "info-focus": "#0284c7",
+      success: "#10b981",
+      "success-focus": "#059669",
+      warning: "#ff9800",
+      "warning-focus": "#e68200",
+      error: "#ff5724",
+      "error-focus": "#f03000",
+   },
+   fontFamily: {
+      inter: "Inter",
+   },
+}

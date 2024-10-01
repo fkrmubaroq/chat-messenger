@@ -1,0 +1,28 @@
+export default {
+   ".btn": {
+      alignItems: "center",
+      borderRadius: ".5rem",
+      cursor: "pointer",
+      display: "inline-flex",
+      justifyContent: "center",
+      letterSpacing: ".025em",
+      padding: ".5rem 1.25rem",
+      textAlign: "center",
+      transitionDuration: ".2s",
+      transitionProperty: "all",
+      transitionTimingFunction: "cubic-bezier(.4,0,.2,1)",
+   },
+   ".huhu": {
+      alignItems: "center",
+      borderRadius: ".5rem",
+      cursor: "pointer",
+      display: "inline-flex",
+      justifyContent: "center",
+      letterSpacing: ".025em",
+      padding: ".5rem 1.25rem",
+      textAlign: "center",
+      transitionDuration: ".2s",
+      transitionProperty: "all",
+      transitionTimingFunction: "cubic-bezier(.4,0,.2,1)",
+   },
+}

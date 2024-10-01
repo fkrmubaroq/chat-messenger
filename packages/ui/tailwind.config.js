@@ -1,10 +1,6 @@
-import tailwindPlugin from "./tailwind.plugin"
-
+import { PresetLineone } from "@chat-message/presets"
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
    content: ["./src/**/*.tsx"],
-   theme: {
-      extend: {},
-   },
-   plugins: [tailwindPlugin],
+   presets: [PresetLineone],
 }

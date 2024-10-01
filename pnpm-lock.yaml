@@ -7,6 +7,9 @@ settings:
 importers:
    .:
       devDependencies:
+         concurrently:
+            specifier: ^9.0.1
+            version: 9.0.1
          eslint-config-prettier:
             specifier: ^9.1.0
             version: 9.1.0(eslint@9.10.0(jiti@1.21.6))
@@ -100,13 +103,25 @@ importers:
             specifier: ^5.4.1
             version: 5.4.3(@types/node@22.5.4)
 
+   packages/presets:
+      devDependencies:
+         tailwindcss:
+            specifier: ^3.4.12
+            version: 3.4.12
+         tsup:
+            specifier: ^8.3.0
+            version: 8.3.0(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1)
+         typescript:
+            specifier: ^5.5.3
+            version: 5.6.2
+
    packages/tailwind-config: {}
 
    packages/ui:
       dependencies:
-         "@chat-message/tailwind-config":
+         "@chat-message/presets":
             specifier: workspace:^
-            version: link:../tailwind-config
+            version: link:../presets
       devDependencies:
          "@types/react":
             specifier: ^18.3.3
@@ -1440,6 +1455,13 @@ packages:
          }
       engines: { node: ">=18" }
 
+   cliui@8.0.1:
+      resolution:
+         {
+            integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==,
+         }
+      engines: { node: ">=12" }
+
    clsx@2.1.1:
       resolution:
          {
@@ -1497,6 +1519,14 @@ packages:
          {
             integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==,
          }
+
+   concurrently@9.0.1:
+      resolution:
+         {
+            integrity: sha512-wYKvCd/f54sTXJMSfV6Ln/B8UrfLBKOYa+lzc6CHay3Qek+LorVSBdMVfyewFhRbH0Rbabsk4D+3PL/VjQ5gzg==,
+         }
+      engines: { node: ">=18" }
+      hasBin: true
 
    consola@3.2.3:
       resolution:
@@ -2002,6 +2032,13 @@ packages:
          }
       engines: { node: ">=6.9.0" }
 
+   get-caller-file@2.0.5:
+      resolution:
+         {
+            integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==,
+         }
+      engines: { node: 6.* || 8.* || >= 10.* }
+
    get-east-asian-width@1.2.0:
       resolution:
          {
@@ -2423,6 +2460,12 @@ packages:
       resolution:
          {
             integrity: sha512-HDWXG8isMntAyRF5vZ7xKuEvOhT4AhlRt/3czTSjvGUxjYCBVRQY48ViDHyfYz9VIoBkW4TMGQNapx+l3RUwdA==,
+         }
+
+   lodash@4.17.21:
+      resolution:
+         {
+            integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
          }
 
    log-update@6.1.0:
@@ -2980,6 +3023,13 @@ packages:
          }
       engines: { node: ">=8.10.0" }
 
+   require-directory@2.1.1:
+      resolution:
+         {
+            integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==,
+         }
+      engines: { node: ">=0.10.0" }
+
    resolve-from@4.0.0:
       resolution:
          {
@@ -3039,6 +3089,12 @@ packages:
       resolution:
          {
             integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==,
+         }
+
+   rxjs@7.8.1:
+      resolution:
+         {
+            integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==,
          }
 
    safe-buffer@5.2.1:
@@ -3121,6 +3177,12 @@ packages:
             integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==,
          }
       engines: { node: ">=8" }
+
+   shell-quote@1.8.1:
+      resolution:
+         {
+            integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==,
+         }
 
    side-channel@1.0.6:
       resolution:
@@ -3262,6 +3324,13 @@ packages:
          }
       engines: { node: ">=8" }
 
+   supports-color@8.1.1:
+      resolution:
+         {
+            integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==,
+         }
+      engines: { node: ">=10" }
+
    supports-preserve-symlinks-flag@1.0.0:
       resolution:
          {
@@ -3350,6 +3419,12 @@ packages:
       resolution:
          {
             integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==,
+         }
+
+   tslib@2.7.0:
+      resolution:
+         {
+            integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==,
          }
 
    tsup@8.3.0:
@@ -3546,6 +3621,13 @@ packages:
          }
       engines: { node: ">=18" }
 
+   y18n@5.0.8:
+      resolution:
+         {
+            integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==,
+         }
+      engines: { node: ">=10" }
+
    yallist@3.1.1:
       resolution:
          {
@@ -3559,6 +3641,20 @@ packages:
          }
       engines: { node: ">= 14" }
       hasBin: true
+
+   yargs-parser@21.1.1:
+      resolution:
+         {
+            integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==,
+         }
+      engines: { node: ">=12" }
+
+   yargs@17.7.2:
+      resolution:
+         {
+            integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==,
+         }
+      engines: { node: ">=12" }
 
    yocto-queue@0.1.0:
       resolution:
@@ -4305,6 +4401,12 @@ snapshots:
          slice-ansi: 5.0.0
          string-width: 7.2.0
 
+   cliui@8.0.1:
+      dependencies:
+         string-width: 4.2.3
+         strip-ansi: 6.0.1
+         wrap-ansi: 7.0.0
+
    clsx@2.1.1: {}
 
    color-convert@1.9.3:
@@ -4326,6 +4428,16 @@ snapshots:
    commander@4.1.1: {}
 
    concat-map@0.0.1: {}
+
+   concurrently@9.0.1:
+      dependencies:
+         chalk: 4.1.2
+         lodash: 4.17.21
+         rxjs: 7.8.1
+         shell-quote: 1.8.1
+         supports-color: 8.1.1
+         tree-kill: 1.2.2
+         yargs: 17.7.2
 
    consola@3.2.3: {}
 
@@ -4678,6 +4790,8 @@ snapshots:
 
    gensync@1.0.0-beta.2: {}
 
+   get-caller-file@2.0.5: {}
+
    get-east-asian-width@1.2.0: {}
 
    get-intrinsic@1.2.4:
@@ -4878,6 +4992,8 @@ snapshots:
    lodash.merge@4.6.2: {}
 
    lodash.sortby@4.7.0: {}
+
+   lodash@4.17.21: {}
 
    log-update@6.1.0:
       dependencies:
@@ -5136,6 +5252,8 @@ snapshots:
       dependencies:
          picomatch: 2.3.1
 
+   require-directory@2.1.1: {}
+
    resolve-from@4.0.0: {}
 
    resolve-from@5.0.0: {}
@@ -5182,6 +5300,10 @@ snapshots:
    run-parallel@1.2.0:
       dependencies:
          queue-microtask: 1.2.3
+
+   rxjs@7.8.1:
+      dependencies:
+         tslib: 2.7.0
 
    safe-buffer@5.2.1: {}
 
@@ -5256,6 +5378,8 @@ snapshots:
          shebang-regex: 3.0.0
 
    shebang-regex@3.0.0: {}
+
+   shell-quote@1.8.1: {}
 
    side-channel@1.0.6:
       dependencies:
@@ -5338,6 +5462,10 @@ snapshots:
       dependencies:
          has-flag: 4.0.0
 
+   supports-color@8.1.1:
+      dependencies:
+         has-flag: 4.0.0
+
    supports-preserve-symlinks-flag@1.0.0: {}
 
    tailwindcss@3.4.12:
@@ -5401,6 +5529,8 @@ snapshots:
          typescript: 5.6.2
 
    ts-interface-checker@0.1.13: {}
+
+   tslib@2.7.0: {}
 
    tsup@8.3.0(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1):
       dependencies:
@@ -5519,9 +5649,23 @@ snapshots:
          string-width: 7.2.0
          strip-ansi: 7.1.0
 
+   y18n@5.0.8: {}
+
    yallist@3.1.1: {}
 
    yaml@2.5.1: {}
+
+   yargs-parser@21.1.1: {}
+
+   yargs@17.7.2:
+      dependencies:
+         cliui: 8.0.1
+         escalade: 3.2.0
+         get-caller-file: 2.0.5
+         require-directory: 2.1.1
+         string-width: 4.2.3
+         y18n: 5.0.8
+         yargs-parser: 21.1.1
 
    yocto-queue@0.1.0: {}
 

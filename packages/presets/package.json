@@ -1,0 +1,27 @@
+{
+   "name": "@chat-message/presets",
+   "version": "1.0.0",
+   "description": "Shared Tailwind presets",
+   "main": "dist/index.js",
+   "exports": {
+      ".": {
+         "require": "./dist/index.cjs",
+         "import": "./dist/index.mjs"
+      }
+   },
+   "files": [
+      "src"
+   ],
+   "scripts": {
+      "build": "tsup",
+      "dev": "tsup --watch"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "tailwindcss": "^3.4.12",
+      "tsup": "^8.3.0",
+      "typescript": "^5.5.3"
+   }
+}

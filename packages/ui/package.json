@@ -6,13 +6,19 @@
    "exports": {
       ".": {
          "import": "./dist/index.mjs",
-         "require": "./dist/index.cjs",
-         "default": "./dist/index.js"
+         "require": "./dist/index.cjs"
       },
       "./button": {
          "import": "./dist/components/button/index.mjs",
-         "require": "./dist/components/button/index.cjs",
-         "default": "./dist/components/button/index.js"
+         "require": "./dist/components/button/index.cjs"
+      },
+      "./typography": {
+         "import": "./dist/components/typography/index.mjs",
+         "require": "./dist/components/typography/index.cjs"
+      },
+      "./avatar": {
+         "import": "./dist/components/avatar/index.mjs",
+         "require": "./dist/components/avatar/index.cjs"
       },
       "./styles": {
          "import": "./dist/index.css"
@@ -41,6 +47,6 @@
       "typescript": "^5.5.3"
    },
    "dependencies": {
-      "@chat-message/tailwind-config": "workspace:^"
+      "@chat-message/presets": "workspace:^"
    }
 }

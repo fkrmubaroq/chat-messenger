@@ -8,12 +8,15 @@
    ],
    "scripts": {
       "prepare": "husky",
-      "format:all": "pnpm exec prettier --write . --ignore-path .prettierignore "
+      "format:all": "pnpm exec prettier --write . --ignore-path .prettierignore ",
+      "dev:packages": "concurrently \"pnpm --filter @chat-message/ui dev\"",
+      "dev:apps": "concurrently \"pnpm --filter @chat-message/client dev\" \"pnpm --filter @chat-message/api dev\""
    },
    "keywords": [],
    "author": "",
    "license": "ISC",
    "devDependencies": {
+      "concurrently": "^9.0.1",
       "eslint-config-prettier": "^9.1.0",
       "husky": "^9.1.6",
       "lint-staged": "^15.2.10",
